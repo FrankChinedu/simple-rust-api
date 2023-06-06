@@ -13,7 +13,7 @@ use uuid::Uuid;
 
 #[get("/healthchecker")]
 pub async fn health_checker_handler() -> Result<Json<GenericResponse>, Status> {
-    const MESSAGE: &str = "Build Simple CRUD API with Rust and Rocket";
+    const MESSAGE: &str = "Build Simple CRUD API with Rust and Rocket -";
 
     let response_json = GenericResponse {
         status: "success".to_string(),
